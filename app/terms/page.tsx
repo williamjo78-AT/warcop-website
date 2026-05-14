@@ -10,7 +10,7 @@ import id from "../../locales/id.json";
 const locales: Record<string, Record<string, string>> = { ko, en, id };
 const langNames: Record<string, string> = { ko: "한국어", en: "English", id: "Bahasa" };
 
-export default function PrivacyPage() {
+export default function TermsPage() {
   const [lang, setLang] = useState("ko");
   const t = locales[lang];
 
@@ -56,30 +56,38 @@ export default function PrivacyPage() {
       <main className="max-w-4xl mx-auto px-4 py-10">
         <div className="bg-white rounded-2xl shadow-sm p-6 md:p-10">
           <h1 className="text-3xl font-extrabold text-[#2D3748] mb-2">
-            {t.privacy_title}
+            {t.terms_title}
           </h1>
           <p className="text-sm text-[#718096] mb-8">
-            {t.privacy_effective}
+            {t.terms_effective}
           </p>
           <p className="text-[#4A5568] leading-relaxed mb-10">
-            {t.privacy_intro}
+            {t.terms_intro}
           </p>
 
-          {section(t.privacy_s1_title, t.privacy_s1_body)}
-          {section(t.privacy_s2_title, t.privacy_s2_body)}
-          {section(t.privacy_s3_title, t.privacy_s3_body)}
-          {section(t.privacy_s4_title, t.privacy_s4_body)}
-          {section(t.privacy_s5_title, t.privacy_s5_body)}
-          {section(t.privacy_s6_title, t.privacy_s6_body)}
-          {section(t.privacy_s7_title, t.privacy_s7_body)}
-          {section(t.privacy_s8_title, t.privacy_s8_body)}
+          {section(t.terms_s1_title, t.terms_s1_body)}
+          {section(t.terms_s2_title, t.terms_s2_body)}
+          {section(t.terms_s3_title, t.terms_s3_body)}
+          {section(t.terms_s4_title, t.terms_s4_body)}
+          {section(t.terms_s5_title, t.terms_s5_body)}
+          {section(t.terms_s6_title, t.terms_s6_body)}
+          {section(t.terms_s7_title, t.terms_s7_body)}
+          {section(t.terms_s8_title, t.terms_s8_body)}
+          {section(t.terms_s9_title, t.terms_s9_body)}
+          {section(t.terms_s10_title, t.terms_s10_body)}
+          {section(t.terms_s11_title, t.terms_s11_body)}
+          {section(t.terms_s12_title, t.terms_s12_body)}
+          {section(t.terms_s13_title, t.terms_s13_body)}
+          {section(t.terms_s14_title, t.terms_s14_body)}
+          {section(t.terms_s15_title, t.terms_s15_body)}
+          {section(t.terms_addendum_title, t.terms_addendum_body)}
 
           <div className="mt-10 pt-6 border-t border-orange-100 flex flex-wrap gap-3">
             <Link
-              href="/delete-account"
+              href="/privacy"
               className="px-4 py-2 bg-[#C53030] text-white rounded-full text-sm font-semibold hover:bg-[#9B2C2C] transition-all"
             >
-              {t.delete_account_link}
+              {t.privacy}
             </Link>
             <Link
               href="/"

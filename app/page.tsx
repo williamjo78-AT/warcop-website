@@ -156,7 +156,7 @@ export default function Home() {
           <div className="flex justify-center gap-6 mb-4 flex-wrap">
             <a href="/privacy" className="text-gray-400 hover:text-white text-sm transition-all">{t.privacy}</a>
             <a href="/delete-account" className="text-gray-400 hover:text-white text-sm transition-all">{t.delete_account_link}</a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-all">{t.terms}</a>
+            <a href="/terms" className="text-gray-400 hover:text-white text-sm transition-all">{t.terms}</a>
           </div>
           <p className="text-gray-500 text-sm">{t.footer_rights}</p>
         </div>
